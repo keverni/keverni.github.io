@@ -8,11 +8,12 @@ body{
     max-width: 390px;
 }
 .calendar-wrapper {
-    width: 360px;
-    margin: 3em auto;
-    padding: 2em;
+    width: 390px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 .inner {
@@ -41,18 +42,3 @@ body{
 
     transition: background .2s linear;
 }
-table {
-  clear: both;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  border-collapse: collapse;
-  color: var(--tg-theme-text-color);
-}
-td {
-  height: 48px;
-  text-align: center;
-  vertical-align: middle;
-  border: none;
-  border-radius: 5px;
-  width: 14.28571429%;
