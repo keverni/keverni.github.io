@@ -7,10 +7,18 @@ body{
 .container {
     max-width: 390px;
 }
+.calendar-wrapper {
+    width: 360px;
+    margin: 3em auto;
+    padding: 2em;
+    border: none;
+    border-radius: 5px;
+
+}
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
 }
 
 .img {
@@ -33,3 +41,18 @@ body{
 
     transition: background .2s linear;
 }
+table {
+  clear: both;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  border-collapse: collapse;
+  color: var(--tg-theme-text-color);
+}
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5px;
+  width: 14.28571429%;
