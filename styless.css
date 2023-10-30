@@ -7,15 +7,27 @@ body{
 .container {
     max-width: 390px;
 }
-.calendar-wrapper {
+.button_calendar {
+    width: 390px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+}
+
+.calendar {
     width: 390px;
     height: 200px;
     margin: 0;
     padding: 0;
     border: none;
     border-radius: 10px;
-
+    display: flex;
 }
+
+
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,7 +41,16 @@ body{
 .item{
     text-align: center;
 }
-
+.btnCal {
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    background: var(--tg-theme-button-color);
+    border-radius: 10px;
+    color: var(--tg-theme-button-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .btn{
     display: inline-block;
     padding: 10px 20px;
@@ -39,6 +60,6 @@ body{
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
     font-weight: 700;
-
-    transition: background .2s linear;
 }
+
+
