@@ -5,3 +5,4 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
 alert("TEST");
+adaptiveSizePageScaleInit(300)
