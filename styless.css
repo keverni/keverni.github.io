@@ -4,14 +4,14 @@ body{
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
     width: 100%;
-    max-width: 390px;
+    height: 100%;
 }
 .container {
     max-width: 390px;
+    width: 100%;
 }
 .button_calendar {
     width: 390px;
-    max-width: 390px;
     height: 25px;
     margin: 0;
     padding: 0;
