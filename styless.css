@@ -41,7 +41,7 @@ body{
 }
 
 .img {
-    width: 150px;
+    width: 75px;
 }
 
 .item{
@@ -49,7 +49,7 @@ body{
 }
 .btnCal {
     margin: 0 auto;
-    display: inline-block;
+    display: block;
     border: none;
     background: var(--tg-theme-button-color);
     border-radius: 10px;
@@ -66,6 +66,7 @@ body{
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 12px;
 }
 
 
