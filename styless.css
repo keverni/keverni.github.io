@@ -42,7 +42,7 @@ body{
 
 .img {
     background: var(--tg-theme-button-color);
-    width: 50px;
+    width: 75px;
 }
 
 .item{
@@ -52,7 +52,7 @@ body{
     margin: 0 auto;
     display: block;
     border: none;
-    background: var(--tg-theme-button-color);
+
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
@@ -62,12 +62,12 @@ body{
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background: var(--tg-theme-button-color);
+
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
