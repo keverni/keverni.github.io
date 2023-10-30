@@ -41,7 +41,8 @@ body{
 }
 
 .img {
-    width: 75px;
+    background: var(--tg-theme-button-color);
+    width: 50px;
 }
 
 .item{
