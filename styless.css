@@ -18,13 +18,39 @@ body{
     border-radius: 10px;
     display: flex;
 }
-
+#calendar2 {
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+#calendar2 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+#calendar2 tbody td {
+    color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+    color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+    background: rgb(220, 0, 0);
+    color: #fff;
+}
 .calendar {
     width: 390px;
     max-width: 390px;
     height: 400px;
     margin: 0;
-    padding: 0;
+    padding-top: -20px;
     border: none;
     border-radius: 10px;
     display: flex;
@@ -37,16 +63,18 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
-    max-width: 390px;
+    padding-top: 40px;
 }
 
 .img {
     background: var(--tg-theme-button-color);
-    width: 75px;
+    width: 70px;
+    height: 200px;
 }
 
 .item{
     text-align: center;
+
 }
 .btnCal {
     margin: 0 auto;
@@ -62,7 +90,6 @@ body{
     display: inline-block;
     padding: 10px 20px;
     border: none;
-
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
