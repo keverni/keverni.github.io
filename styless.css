@@ -90,7 +90,8 @@ body{
 
 }
 table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+
+    font-family: var(--tg-theme-text-color);
     text-align: left;
     border-collapse: separate;
     border-spacing: inherit;
