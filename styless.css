@@ -9,7 +9,7 @@ body{
 
 }
 .container {
-    max-width: 390px;
+    max-width: inherit;
 
 }
 .button_calendar {
