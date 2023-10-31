@@ -53,16 +53,7 @@ body{
     text-align: center;
 
 }
-.btnCal {
-    margin: 0 auto;
-    display: block;
-    border: none;
 
-    border-radius: 10px;
-    color: var(--tg-theme-button-text-color);
-    text-transform: uppercase;
-    font-weight: 700;
-}
 .btn{
     width: 105px;
     display: inline-block;
@@ -70,7 +61,7 @@ body{
     border: none;
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
-    background: red;
+    background: var(--tg-theme-button-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 11px;
@@ -86,8 +77,8 @@ body{
     border: none;
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
-    background: red;
-    font-weight: 700px;
+    background: var(--tg-theme-button-color);
+    font-weight: inherit;
     font-size: 11px;
 
 }
@@ -102,11 +93,10 @@ table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
     text-align: left;
     border-collapse: separate;
-    border-spacing: 11px;
-    background: #ECE9E0;
-    color: #656665;
+    border-spacing: 3px;
+    color: var(--tg-theme-button-text-color);
     border: 16px solid #ECE9E0;
-    border-radius: 20px;
+    border-radius: inherit;
 
 }
 th {
@@ -116,7 +106,11 @@ th {
 td {
     background: #F5D7BF;
     padding: 10px;
+    border: none;
+    border-radius: 10px;
 
 }
+
+
 
 
