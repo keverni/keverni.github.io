@@ -23,8 +23,8 @@ body{
 }
 
 .calendar {
-    width: 390px;
-    max-width: 390px;
+    width: inherit;
+    max-width: 1200px;
     height: 400px;
     margin: 0;
     padding-top: -20px;
@@ -115,7 +115,7 @@ th {
 }
 td {
     background: #F5D7BF;
-    padding: 5px;
+    padding: 10px;
 
 }
 
