@@ -93,7 +93,7 @@ table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
     text-align: left;
     border-collapse: separate;
-    border-spacing: 3px;
+    border-spacing: inherit;
     color: var(--tg-theme-button-text-color);
     border: 16px solid #ECE9E0;
     border-radius: inherit;
