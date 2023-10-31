@@ -62,8 +62,8 @@ body{
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    padding-top: 40px;
+    grid-template-rows: 80px 80px;
+    padding-top: 63px;
 }
 
 .img {
@@ -92,6 +92,7 @@ body{
     border: none;
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 11px;
