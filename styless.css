@@ -25,12 +25,11 @@ body{
 .calendar {
     width: inherit;
     max-width: 1200px;
-    height: 400px;
+    height: inherit;
     margin: 0;
     padding-top: -20px;
     border: none;
     border-radius: 10px;
-    display: flex;
 }
 
 .currentMonthYear {
@@ -40,7 +39,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px 80px;
-    padding-top: 63px;
+    padding-top: 20px;
+
 }
 
 .img {
@@ -104,13 +104,18 @@ th {
     padding: 10px;
 }
 td {
-    background: #F5D7BF;
     padding: 10px;
     border: none;
     border-radius: 10px;
 
 }
-
+.timeAndWeek {
+    color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
+}
+.ChangeColor {
+    background: greenyellow;
+}
 
 
 
