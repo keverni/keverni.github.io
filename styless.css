@@ -1,3 +1,6 @@
+/*
+    Main menu
+ */
 body{
     margin: 0;
     padding: 0;
@@ -18,33 +21,7 @@ body{
     border-radius: 10px;
     display: flex;
 }
-#calendar2 {
-    width: 100%;
-    font: monospace;
-    line-height: 1.2em;
-    font-size: 15px;
-    text-align: center;
-}
-#calendar2 thead tr:last-child {
-    font-size: small;
-    color: rgb(85, 85, 85);
-}
-#calendar2 thead tr:nth-child(1) td:nth-child(2) {
-    color: rgb(50, 50, 50);
-}
-#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
-    cursor: pointer;
-}
-#calendar2 tbody td {
-    color: rgb(44, 86, 122);
-}
-#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
-    color: rgb(231, 140, 92);
-}
-#calendar2 tbody td.today {
-    background: rgb(220, 0, 0);
-    color: #fff;
-}
+
 .calendar {
     width: 390px;
     max-width: 390px;
@@ -93,10 +70,53 @@ body{
     border: none;
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
-    background: var(--tg-theme-button-color);
+    background: red;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 11px;
+}
+/*
+    Settings
+ */
+
+.btnBack {
+    width: 55px;
+    height: 35px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    color: var(--tg-theme-button-text-color);
+    background: red;
+    font-weight: 700px;
+    font-size: 11px;
+
+}
+
+.inner1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px;
+
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 11px;
+    background: #ECE9E0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+
+}
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+td {
+    background: #F5D7BF;
+    padding: 5px;
+
 }
 
 
