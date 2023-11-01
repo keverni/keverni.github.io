@@ -95,9 +95,9 @@ table {
     border-collapse: separate;
     border-spacing: 4px;
     color: var(--tg-theme-text-color);
-    background: var(--tg-theme-button-color);
+    background: var(--tg-theme-bg-color);
     border-radius: inherit;
-    font-size: inherit;
+    font-size: 9px;
 }
 
 td {
