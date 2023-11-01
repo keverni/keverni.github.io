@@ -109,7 +109,7 @@ function Checker_purple(i, a = time)
     console.log(Number(Now.getHours()));
 
 
-    if (Number(Now.getHours()) > Number(hour_minutes[0]) && Number(Now.getHours()) < Number(hour_minutes_1[0]))
+    if (Number(Now.getHours()) >= Number(hour_minutes[0]) && Number(Now.getHours()) <= Number(hour_minutes_1[0]))
     {
       return true;
     }
