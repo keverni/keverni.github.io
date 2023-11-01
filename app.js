@@ -55,7 +55,7 @@ for (let i = 0; i < time.length; ++i)
       week_tr += "<td class='ChangeColor'>" + " " + "</td>";
     } else
     {
-      week_tr += "<td class='timeAndWeek'>" + " " + "</td>";
+      week_tr += "<td class='times'>" + " " + "</td>";
     }
   }
   week_tr += "</tr>";

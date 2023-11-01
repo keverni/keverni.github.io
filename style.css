@@ -10,10 +10,12 @@ body{
   margin: 0px;
   width: 100vw;
   color: var(--tg-theme-text-color);
-  background: var(--tg-theme-secondary-bg-color);
+  background: #1E1E1E;
 
 }
+.container{
 
+}
 .calendar {
   max-width: inherit;
   height: inherit;
@@ -34,32 +36,43 @@ body{
   width: 105px;
   display: inline-block;
   padding: 10px 20px;
-  border: none;
+  border: 1.5px solid #495D92;
   border-radius: 4px;
-  color: var(--tg-theme-button-text-color);
-  background: var(--tg-theme-button-color);
+  color: white;
+  background: #222328;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 11px;
 }
 table {
-  /*font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"*/;
+  font-family: "Calibri";
+  font-weight: bold;
   text-align: center;
   border-collapse: separate;
   border-spacing: 4px;
-  color: var(--tg-theme-text-color);
+  color: white;
   font-size: 9px;
+
+
 }
 td {
   padding: 10px;
-  border: 2px solid grey;
-  background: lightgrey;
+  border: 1.5px solid #666666;
+  background: #2B2B2B ;
   border-radius: 4px;
 }
 .ChangeColor {
-  border: 2px solid green;
-  background: limegreen;
+  border: 1.5px solid #55C478;
+  background: #2B382E;
   border-radius: 4px;
+}
+.timeAndWeek {
+  background: #28252E;
+  border: 1.5px solid #A186E3;
 }
 
 
+.times {
+  background: #2D2121;
+  border: 1.5px solid #D64E50;
+}
