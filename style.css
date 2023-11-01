@@ -64,18 +64,26 @@ td {
   background: #2B2B2B ;
   border-radius: 4px;
 }
-.ChangeColor {
+.ChangeColorGreen {
   border: 1.5px solid #55C478;
   background: #2B382E;
   border-radius: 4px;
 }
-.timeAndWeek {
-  background: #28252E;
+.ChangeColorPurple {
   border: 1.5px solid #A186E3;
+  background: #28252E;
+  border-radius: 4px;
 }
-
-
-.times {
+.ChangeColorRed {
   background: #2D2121;
   border: 1.5px solid #D64E50;
+  border-radius: 4px;
 }
+.timeAndWeek {
+  background: #222328;
+  border: 1.5px solid #495D92;
+}
+
+
+
+
