@@ -96,8 +96,8 @@ table {
     border-spacing: 4px;
     color: var(--tg-theme-bg-color);
     border-radius: inherit;
-    font-size: 9px;
-    table-layout: auto;
+    font-size: 6px;
+    display: inline-table;
 }
 
 td {
