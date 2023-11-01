@@ -35,7 +35,7 @@ body{
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   color: var(--tg-theme-button-text-color);
   background: var(--tg-theme-button-color);
   text-transform: uppercase;
@@ -43,15 +43,14 @@ body{
   font-size: 11px;
 }
 table {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"*/;
   text-align: center;
   border-collapse: separate;
   border-spacing: 4px;
-  color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
   font-size: 9px;
 }
 td {
-
   padding: 10px;
   border: 2px solid grey;
   background: lightgrey;
