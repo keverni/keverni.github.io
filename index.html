@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name=viewport content="width=device-width, initial-scale=1.0 ">
-    <title>Главная</title>
-    <link rel="stylesheet" href="styless.css">
+  <meta charset="UTF-8" name=viewport content="width=device-width, initial-scale=1.0 ">
+  <title>Главная</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calendar">
+<div class="container">
+  <div class="calendar">
+    <table id="table_cal">
+    </table>
+  </div>
+  <div class="buttons">
+    <div class="item">
 
-            <table class="calendar" id="table_cal">
-            </table>
-        </div>
-        <div class="inner">
-            <div class="item">
+    <button class="btn"  id="btn1">График</button>
 
-                <button class="btn"  id="btn1">График</button>
-
-            </div>
-            <div class="item">
-
-                <button class="btn" onclick="Setting()" id="btn2">Настройки</button>
-
-            </div>
-            <div class="item">
-
-                <button class="btn" id="btn3">Аналитика</button>
-
-            </div>
-            <div class="item">
-
-                <button class="btn" id="btn4">Рассылка</button>
-            </div>
-            <div class="item">
-
-                <button class="btn" id="btn5">Подписка</button>
-            </div>
-        </div>
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="app.js"></script>
+    <div class="item">
+
+      <button class="btn" onclick="Setting()" id="btn2">Настройки</button>
+
+    </div>
+    <div class="item">
+
+      <button class="btn" id="btn3">Аналитика</button>
+
+    </div>
+    <div class="item">
+
+      <button class="btn" id="btn4">Рассылка</button>
+    </div>
+    <div class="item">
+
+      <button class="btn" id="btn5">Подписка</button>
+    </div>
+  </div>
+</div>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

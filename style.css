@@ -1,0 +1,66 @@
+body{
+  align-content: center;
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  justify-content: flex-start;
+  margin: 0px;
+  width: 100vw;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-secondary-bg-color);
+
+}
+
+.calendar {
+  max-width: inherit;
+  height: inherit;
+  margin: 0;
+
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 80px;
+  padding-top: 20px;
+
+}
+.item{
+  text-align: center;
+}
+.btn{
+  width: 105px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: var(--tg-theme-button-text-color);
+  background: var(--tg-theme-button-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+}
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 4px;
+  color: var(--tg-theme-bg-color);
+  font-size: 9px;
+}
+td {
+
+  padding: 10px;
+  border: 2px solid grey;
+  background: lightgrey;
+  border-radius: 4px;
+}
+.ChangeColor {
+  border: 2px solid green;
+  background: limegreen;
+  border-radius: 4px;
+}
+
+
