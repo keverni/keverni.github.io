@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
+    background: var(--tg-theme-secondary-bg-color);
 
 }
 .container {
@@ -26,8 +26,8 @@ body{
     width: inherit;
     max-width: 1200px;
     height: inherit;
+    max-width: 600px;
     margin: 0;
-    padding-top: -20px;
     border: none;
     border-radius: 10px;
 }
@@ -90,32 +90,34 @@ body{
 
 }
 table {
-
-    font-family: var(--tg-theme-text-color);
-    text-align: left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    text-align: center;
     border-collapse: separate;
-    border-spacing: inherit;
-    color: var(--tg-theme-button-text-color);
-    border: 16px solid #ECE9E0;
+    border-spacing: 4px;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-button-color);
     border-radius: inherit;
+    font-size: inherit;
+}
 
-}
-th {
-    font-size: 18px;
-    padding: 10px;
-}
 td {
     padding: 10px;
-    border: none;
+    border: 2px solid grey;
+    background: lightgrey;
     border-radius: 10px;
+
 
 }
 .timeAndWeek {
     color: var(--tg-theme-button-text-color);
-    background: var(--tg-theme-button-color);
+
+
 }
 .ChangeColor {
-    background: greenyellow;
+    background: lawngreen;
+    border: 2px solid green;
+    background: limegreen;
+    border-radius: 10px;
 }
 
 

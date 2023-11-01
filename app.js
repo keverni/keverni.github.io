@@ -15,22 +15,25 @@ let dict = {
     0 : "ВС"
 }
 let time = [
-    "8:00", "12:00", "15:00", "18:00"
+    "8:00|10:30", "11:00|14:30", "15:00|17:30", "18:00|20:30"
 ]
-let write_time = [['ЧТ', '12:00'], ['ПТ', '8:00']];
+let write_time = [['ПН', '11:00|14:30'], ['ЧТ', '8:00|10:30'], ['ЧТ', '18:00|20:30']];
 let week =[
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 1,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 2,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 3,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 4,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 5,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 6,
-    new Date(new Date().getFullYear(),new Date().getMonth(),0).getDate() + 7
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate(),
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 1,
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 2,
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 3,
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 4,
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 5,
+    new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 6
 ];
 let week_str = []
 for (let i = 0; i < week.length; ++i)
 {
+
     D = new Date(new Date().getFullYear(),new Date().getMonth(),week[i]);
+
+    console.log(D);
     if (i == 0) {
         week_tr += "<td>" + " " + "</td>" + "<td class='timeAndWeek'>" + dict[D.getDay()] + "</td>";
     } else {
@@ -39,7 +42,7 @@ for (let i = 0; i < week.length; ++i)
     }
     week_str.push(dict[D.getDay()]);
 }
-console.log(week_str);
+
 week_tr += "</tr>";
 for (let i = 0; i < time.length; ++i)
 {
@@ -52,7 +55,7 @@ for (let i = 0; i < time.length; ++i)
             week_tr += "<td class='ChangeColor'>" + " " + "</td>";
         } else
         {
-            week_tr += "<td>" + " " + "</td>";
+            week_tr += "<td class='timeAndWeek'>" + " " + "</td>";
         }
     }
     week_tr += "</tr>";
@@ -61,14 +64,10 @@ for (let i = 0; i < time.length; ++i)
 }
 function Checker(i, j, a = week_str, b = write_time)
 {
-    console.log(i);
-    console.log(j);
+
     for (let k = 0; k < write_time.length; ++k)
     {
-        console.log(week_str[j]);
-        console.log(write_time[k][0]);
-        console.log(time[i]);
-        console.log(write_time[k][1]);
+
         if (week_str[j] === write_time[k][0] && time[i] === write_time[k][1])
         {
             return true;
