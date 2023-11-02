@@ -15,17 +15,17 @@ let dict = {
   0 : "ВС"
 }
 let time = [
-  "8:00|10:30", "11:00|14:30", "15:00|17:30", "22:00|24:30"
+  "8:00|10:30", "11:00|14:30", "15:00|17:30", "18:00|20:30"
 ]
-let write_time = [['ПН', '11:00|14:30'], ['ЧТ', 'Выходной'], ['ЧТ', '8:00|10:30'], ['ЧТ', '18:00|20:30']];
+let write_time = [['ПН', '11:00|14:30'], ['ПТ', 'Выходной'], ['ЧТ', '8:00|10:30'], ['ЧТ', '18:00|20:30']];
 let week =[
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate(),
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 1,
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 2,
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 3,
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 4,
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 5,
-  new Date(new Date().getFullYear(),new Date().getMonth(),1).getDate() + 6
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay(),
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 1,
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 2,
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 3,
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 4,
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 5,
+  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 6
 ];
 let week_str = []
 for (let i = 0; i < week.length; ++i)
@@ -105,7 +105,7 @@ function Checker_purple(i, a = time)
     let hour_minutes_1 = k[1].split(":");
     console.log(hour_minutes[0]);
     console.log(hour_minutes_1[0]);
-    console.log(Number(Now.getHours()));
+    console.log(Number(Now.getDay()));
     console.log(Number(Now.getHours()));
 
 
