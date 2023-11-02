@@ -27,6 +27,7 @@ let week =[
   new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 5,
   new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 6
 ];
+
 let week_str = []
 for (let i = 0; i < week.length; ++i)
 {
@@ -103,10 +104,7 @@ function Checker_purple(i, a = time)
     let Now = new Date();
     let hour_minutes = k[0].split(":");
     let hour_minutes_1 = k[1].split(":");
-    console.log(hour_minutes[0]);
-    console.log(hour_minutes_1[0]);
-    console.log(Number(Now.getDay()));
-    console.log(Number(Now.getHours()));
+
 
 
     if (Number(Now.getHours()) >= Number(hour_minutes[0]) && Number(Now.getHours()) <= Number(hour_minutes_1[0]))
@@ -115,4 +113,11 @@ function Checker_purple(i, a = time)
     }
 
 }
-Checker_purple()
+function Graphic()
+{
+  location.href="Graph.html";
+}
+function GoBack()
+{
+  location.href="index.html";
+}
