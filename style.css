@@ -9,7 +9,7 @@ body{
   margin: 0px;
   width: 100vw;
   color: var(--tg-theme-text-color);
-  background: #1E1E1E;
+  background: var(--tg-theme-secondary-bg-color);
 
 }
 .container{
@@ -104,6 +104,12 @@ td {
   transform: none;
   display: block;
 }
+.Week_calendar {
 
+  color: white;
+  border: 1.5px solid #495D92;
+  background: #222328;
+  width: 70px;
+}
 
 
