@@ -3,9 +3,7 @@ tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
-let textColor = getComputedStyle(document.documentElement).getPropertyValue('--tg-theme-text-color');
-document.getElementById("item").innerHTML = textColor;
-console.log(textColor);
+
 let week_tr = "";
 let dict = {
   1 : "ПН",
