@@ -3,7 +3,9 @@ tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
-
+let textColor = getComputedStyle(document.documentElement).getPropertyValue('--tg-theme-text-color');
+document.getElementById("item").innerHTML = textColor;
+console.log(textColor);
 let week_tr = "";
 let dict = {
   1 : "ПН",
@@ -19,21 +21,20 @@ let time = [
 ]
 let write_time = [['ПН', '11:00|14:30'], ['ПТ', 'Выходной'], ['ЧТ', '8:00|10:30'], ['ЧТ', '18:00|20:30']];
 let week =[
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay(),
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 1,
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 2,
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 3,
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 4,
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 5,
-  new Date(new Date().getFullYear(),new Date().getMonth(),0).getDay() + 6
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay(),
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 1,
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 2,
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 3,
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 4,
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 5,
+  new Date(new Date().getFullYear(),new Date().getMonth()).getDay() + 6
 ];
 
 let week_str = []
-for (let i = 0; i < week.length; ++i)
-{
 
-  D = new Date(new Date().getFullYear(),new Date().getMonth(),week[i]);
+for (let i = 0; i < week.length; ++i) {
 
+  D = new Date(new Date().getFullYear(), new Date().getMonth(), week[i]);
 
   if (i == 0) {
     week_tr += "<td>" + " " + "</td>" + "<td class='timeAndWeek'>" + dict[D.getDay()] + "</td>";
@@ -41,6 +42,7 @@ for (let i = 0; i < week.length; ++i)
     week_tr += "<td class='timeAndWeek'>" + dict[D.getDay()] + "</td>";
 
   }
+  console.log(dict[D.getDay()])
   week_str.push(dict[D.getDay()]);
 }
 
